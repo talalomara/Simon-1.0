@@ -7,10 +7,11 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 bot = ChatBot(
     name = 'Simon', read_only = True)
 
-
+#train using corpus trainer
 corpus_trainer = ChatterBotCorpusTrainer(bot)
 corpus_trainer.train('chatterbot.corpus.english')
 
+#loop to get input for the chatbot
 while True:
     try:
         bot_input = input("You: ")
